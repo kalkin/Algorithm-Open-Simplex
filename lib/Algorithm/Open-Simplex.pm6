@@ -33,7 +33,10 @@ method noise4d(Num(Numeric) $w, Num(Numeric) $x, Num(Numeric) $y, Num(Numeric) $
     return open_simplex_noise4d($!struct, $w, $x, $y, $z);
 }
 
+method DESTROY() { open_simplex_noise_free($!struct) }
+
 sub open_simplex_noise(int64, Pointer[Struct] is rw) is native($lib) returns int32 {*}
 sub open_simplex_noise2d(Struct, num64, num64) is native($lib) returns num64 {*}
 sub open_simplex_noise3d(Struct, num64, num64, num64) is native($lib) returns num64 {*}
 sub open_simplex_noise4d(Struct, num64, num64, num64, num64) is native($lib) returns num64 {*}
+sub open_simplex_noise_free(Struct) is native($lib) returns Nil {*}
