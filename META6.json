@@ -15,7 +15,7 @@
   "provides" : {
     "Algorithm::Open-Simplex" : "lib/Algorithm/Open-Simplex.pm6"
   },
-  "version" : "*",
+  "version" : "1.0.0",
   "authors" : [
     "Bahtiar `kalkin-` Gadimov"
   ],
