@@ -1,9 +1,9 @@
 .PHONY: clean test
 
-all: %DESTDIR%/resources/libraries/%opensimplex%
+all: %DESTDIR%/resources/libraries/
 
 clean:
-	rm -f %DESTDIR%/resources/libraries/%opensimplex% %DESTDIR%/src/opensimplex/*.o
+	rm -f %DESTDIR%/resources/libraries/ %DESTDIR%/src/opensimplex/*.o
 
 %DESTDIR%/resources/libraries/%opensimplex%: src/opensimplex/opensimplex%O%
 	%LD% %LDSHARED% %LDFLAGS% %LIBS% %LDOUT%$@ $<
