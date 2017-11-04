@@ -4,6 +4,9 @@
   "support" : {
     "source" : null
   },
+  "build-depends" : [
+    "LibraryMake"
+  ],
   "perl" : "6.c",
   "license" : "Artistic-2.0",
   "test-depends" : [
