@@ -1,8 +1,8 @@
 /blib/
 /src/*.o
 /src/Makefile
-/resources/*.so
-/resources/*.dylib
+*.so
+*.dylib
 .precomp/
 # Prove saved state
 .prove
@@ -18,3 +18,4 @@ Session.vim
 tags
 
 Makefile
+
