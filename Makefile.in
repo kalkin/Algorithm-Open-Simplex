@@ -1,0 +1,15 @@
+.PHONY: clean test
+
+all: %DESTDIR%/resources/libraries/%opensimplex%
+
+clean:
+	rm -f %DESTDIR%/resources/libraries/%opensimplex% %DESTDIR%/src/opensimplex/*.o
+
+%DESTDIR%/resources/libraries/%opensimplex%: src/opensimplex/opensimplex%O%
+	%LD% %LDSHARED% %LDFLAGS% %LIBS% %LDOUT%$@ $<
+
+src/opensimplex/opensimplex%O%: src/opensimplex/open-simplex-noise.c
+	%CC% -c %CCSHARED% %CCFLAGS% %CCOUT% $@ $<
+
+test: all
+	prove -e "perl6 -Ilib" t

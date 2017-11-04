@@ -1,0 +1,21 @@
+{
+  "name" : "Algorithm-Open-Simplex",
+  "source-url" : "",
+  "support" : {
+    "source" : null
+  },
+  "perl" : "6.c",
+  "license" : "Artistic-2.0",
+  "test-depends" : [
+    "Test::META"
+  ],
+  "provides" : {
+    "Algorithm::Open-Simplex" : "lib/Algorithm/Open-Simplex.pm6"
+  },
+  "version" : "*",
+  "authors" : [
+    "Bahtiar `kalkin-` Gadimov"
+  ],
+  "description" : "blah blah blah",
+  "meta6" : "0"
+}
