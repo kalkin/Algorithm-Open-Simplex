@@ -3,7 +3,7 @@ use v6;
 
 )
 use Test;
-use Algorithm::Open-Simplex;
+use Algorithm::OpenSimplex;
 
 pass "replace me";
 

@@ -1,19 +1,19 @@
 {
-  "name" : "Algorithm-Open-Simplex",
+  "name" : "Algorithm-OpenSimplex",
   "source-url" : "",
   "support" : {
     "source" : null
   },
+  "perl" : "6.c",
   "build-depends" : [
     "LibraryMake"
   ],
-  "perl" : "6.c",
   "license" : "Artistic-2.0",
   "test-depends" : [
     "Test::META"
   ],
   "provides" : {
-    "Algorithm::Open-Simplex" : "lib/Algorithm/Open-Simplex.pm6"
+    "Algorithm::OpenSimplex" : "lib/Algorithm/OpenSimplex.pm6"
   },
   "version" : "1.0.0",
   "authors" : [
